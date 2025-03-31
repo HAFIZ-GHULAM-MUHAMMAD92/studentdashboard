@@ -1,0 +1,103 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .auth-page {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .courses {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .course {
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #course-details {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .progress-container {
+            width: 50%;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .progress-bar {
+            width: 100%;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .progress {
+            height: 20px;
+            background: #28a745;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            width: 0%;
+        }
+        .progress-container > div {
+            display: none;
+        }
+        .logout-button {
+            margin-top: 20px;
+            background-color: #dc3545;
+        }
+        .logout-button:hover {
+            background-color: #a71d2a;
+        }
+        .profile-container {
+            display: none;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <script src="../js/index.js"></script>
+</head>
+<body>
+    <div id="login-page" class="auth-page">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h1>Welcome to Student Dashboard</h1>
+
+        <div class="nav-buttons">
+            <button onclick="showDashboard()">Dashboard</button>
+            <button onclick="showProfile()">Personal Details</button>
+        </div>
+
+        <h2>Courses</h2>
+        <div class="courses">
+            <div class="course" onclick="viewCourse('HTML')">HTML</div>
+            <div class="course" onclick="viewCourse('CSS')">CSS</div>
+            <div class="course" onclick="viewCourse('JavaScript')">JavaScript</div>
+        </div>
+        <div id="course-details"></div>
+
+        <h2>Course Progress</h2>
+        <div class="progress-container">
+            <div id="html-progress-container">
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress" id="html-progress" style="width: 70%">70%</div></div>
+            </div>
+            <div id="css-progress-container">
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress" id="css-progress" style="width: 50%">50%</div></div>
+            </div>
+            <div id="js-progress-container">
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress" id="js-progress" style="width: 30%">30%</div></div>
+            </div>
+        </div>
+        
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Personal Details Section -->
+    
+ <!-- Personal Details Section -->
+<div id="profile" class="profile-container">
+    <h2>Personal Details</h2>
+    <img id="profile-pic" src="../images/img2.jpeg" alt="Profile Picture">
+    <p><strong>Name:</strong>Ghulam Muhammad</p>
+    <p><strong>Email:</strong>gm4066850@gmail.com</p>
+    <p><strong>CNIC:</strong> 41303-5167372-7</p>
+    <button onclick="showDashboard()">Back to Dashboard</button>
+</div>
+
+</body>
+</html>
